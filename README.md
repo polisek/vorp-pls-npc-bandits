@@ -1,4 +1,4 @@
-# QBR NPC Bandits by Polísek
+# VORP NPC Bandits by Polísek
 
 You can be robbed by NPC bandits
 
