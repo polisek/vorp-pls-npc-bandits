@@ -104,7 +104,7 @@ end
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(1000)
+	Citizen.Wait(1000)
 	local BigDistance = nil
         if canBeRob == true then
             local chance = math.random(1,100)
@@ -129,6 +129,9 @@ Citizen.CreateThread(function()
 			end
 		end
             end
+	    if BigDistance == true then
+		Wait(5000)			
+	    end
         end
 
         if inRobbery == true then
