@@ -105,6 +105,7 @@ end
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1000)
+	local BigDistance = nil
         if canBeRob == true then
             local chance = math.random(1,100)
             local coords = GetEntityCoords(PlayerPedId())
@@ -121,8 +122,11 @@ Citizen.CreateThread(function()
                     end
                 elseif dis < 100.0 then
 		  	Wait(1000)
+			BigDistance = false			
 		else
-			Wait(7000)			
+			if BigDistance == false then
+			   BigDistance = true
+			end
 		end
             end
         end
